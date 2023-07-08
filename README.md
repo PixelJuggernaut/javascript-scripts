@@ -7,12 +7,16 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 ## [Added]
 
-## [05.07.2023] 
+## [08.07.2023]
 
-- Captcha Generator and Cookies Consent Box moved to this repository.
+- New web form - CSS Glowing Buttons with Animating Borders and Shadow
 
 ## [06.07.2023] 
 
 - New pricing plans - HTML Dark Pricing and Pricing Table with features filling bars
 - New progress bars - Gradient downloading progress bar and HTML Battery Charging Progress Bar
 - New 404 page - 404 Page in Space with Astronaut
+
+## [05.07.2023] 
+
+- Captcha Generator and Cookies Consent Box moved to this repository.
