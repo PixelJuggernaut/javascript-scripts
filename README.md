@@ -5,7 +5,10 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 # Changelog
 
-## [Added]
+## [13.07.2023]
+
+- New Timelines - Event Reporter Timeline and Responsive Sliding Timeline
+- Changed credits from Psycho006Develop(my old username) to PixelJuggernaut
 
 ## [08.07.2023]
 
