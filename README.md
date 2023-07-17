@@ -5,6 +5,12 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 # Changelog
 
+## [17.07.2023]
+
+- New 404 page - 404 Page with Animating Robot
+- New category - Accordions
+- First Accordion - HTML Accordion with Float in Effect
+
 ## [13.07.2023]
 
 - New Timelines - Event Reporter Timeline and Responsive Sliding Timeline
