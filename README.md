@@ -5,6 +5,11 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 # Changelog
 
+## [19.07.2023]
+
+- New category - Thumbnail
+- 2 Thumbnails - Thumbnail Split on Hover and Thumbnail with Hover Effect
+
 ## [17.07.2023]
 
 - New 404 page - 404 Page with Animating Robot
