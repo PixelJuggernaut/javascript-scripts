@@ -5,12 +5,7 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 # Changelog
 
-
-- New category - Social Buttons
-- New social button - Social Sharing Buttons with Various Sizes
-- New social button - Animating Social Buttons
-
-## [19.07.2023]
+## [24.07.2023]
 
 - Big update! All files are now in 1 file named sourcecode!
 
@@ -21,6 +16,9 @@ This repository will be updated with new scripts every day(or few days), so leav
 - New menu - Triangular Menu in the Page Corner
 - New menu - Light Dark Admin Dashboard Menus with Tailwind CSS
 - Added some missing images for preview
+- New category - Social Buttons
+- New social button - Social Sharing Buttons with Various Sizes
+- New social button - Animating Social Buttons
 
 ## [17.07.2023]
 
