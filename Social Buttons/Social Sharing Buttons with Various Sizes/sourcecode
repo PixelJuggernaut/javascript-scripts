@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.container{ text-align: center; }
+
+/* Button styles: */
+i.fb,       span.fb{     	color: #3b5998; }
+i.tw,       span.tw{     	color: #00aced; }
+i.linkin,   span.linkin{ 	color: #007bb6; }
+i.vk,       span.vk{     	color: #45668e; }
+i.pinterest,span.pinterest{ color: #cb2027; }
+i.surfingbird{ max-height: 12px; min-width: 25%; }
+i.surfingbird::before{ 
+    content: url(http://yourlink/codes/files/surf.png); 
+    position: relative;
+    left:0px;
+    top: -7px;
+    float: left;
+}
+</style>
+
+</head>
+<body>
+<!-- Replace all "yourlink" with your link and "YourName" with your name -->
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<div class="container">
+<div class="btn-group">
+<button class="btn btn-default btn-lg disabled">Share:</button>
+<a class="btn btn-default btn-lg" target="_blank" title="Like On Facebook" href="https://www.facebook.com/plugins/like.php?href=yourlink">
+<i class="fa fa-thumbs-o-up fa-lg fb"></i>
+</a>
+<a class="btn btn-default btn-lg" target="_blank" title="On Facebook" href="https://www.facebook.com/sharer.php?u=yourlink">
+<i class="fa fa-facebook fa-lg fb"></i>
+</a>
+<a class="btn btn-default btn-lg" target="_blank" title="On Twitter" href="https://twitter.com/intent/tweet?text=YourName&url=yourlink">
+<i class="fa fa-twitter fa-lg tw"></i>
+</a>
+<a class="btn btn-default btn-lg" target="_blank" title="On LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=yourlink">
+<i class="fa fa-linkedin fa-lg linkin"></i>
+</a>
+<a class="btn btn-default btn-lg" target="_blank" title="On VK.com" href="https://vk.com/share.php?url=yourlink">
+<i class="fa fa-vk fa-lg vk"></i>
+</a>
+<a class="btn btn-default btn-lg" target="_blank" title="Pin It" href="https://www.pinterest.com/pin/create/button/?url=yourlink">
+<i class="fa fa-pinterest fa-lg pinterest"></i>
+</a>
+<a class="btn btn-default btn-lg" target="_blank" title="Surf!" href="http://surfingbird.ru/share?url=yourlink">
+<i class="fa surfingbird fa-lg"></i>
+</a>
+</div>
+</div>
+<hr>
+<div class="container">
+<div class="btn-group">
+<button class="btn btn-default disabled">Share:</button>
+<a class="btn btn-default" target="_blank" title="Like On Facebook" href="https://www.facebook.com/plugins/like.php?href=yourlink">
+<i class="fa fa-thumbs-o-up fa-lg fb"></i>
+</a>
+<a class="btn btn-default" target="_blank" title="On Facebook" href="https://www.facebook.com/sharer.php?u=yourlink">
+<i class="fa fa-facebook fa-lg fb"></i>
+</a>
+<a class="btn btn-default" target="_blank" title="On Twitter" href="https://twitter.com/intent/tweet?text=YourName&url=yourlink">
+<i class="fa fa-twitter fa-lg tw"></i>
+</a>
+<a class="btn btn-default" target="_blank" title="On LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=yourlink">
+<i class="fa fa-linkedin fa-lg linkin"></i>
+</a>
+<a class="btn btn-default" target="_blank" title="On VK.com" href="https://vk.com/share.php?url=yourlink">
+<i class="fa fa-vk fa-lg vk"></i>
+</a>
+<a class="btn btn-default" target="_blank" title="Pin It" href="https://www.pinterest.com/pin/create/button/?url=yourlink">
+<i class="fa fa-pinterest fa-lg pinterest"></i>
+</a>
+<a class="btn btn-default" target="_blank" title="Surf!" href="http://surfingbird.ru/share?url=yourlink">
+<i class="fa surfingbird fa-lg"></i>
+</a>
+</div>
+</div>
+<hr>
+<div class="container">
+<div class="btn-group">
+<button class="btn btn-default btn-sm disabled">Share:</button>
+<a class="btn btn-default btn-sm" target="_blank" title="Like On Facebook" href="https://www.facebook.com/plugins/like.php?href=yourlink">
+<i class="fa fa-thumbs-o-up fa-lg fb"></i>
+</a>
+<a class="btn btn-default btn-sm" target="_blank" title="On Facebook" href="https://www.facebook.com/sharer.php?u=yourlink">
+<i class="fa fa-facebook fa-lg fb"></i>
+</a>
+<a class="btn btn-default btn-sm" target="_blank" title="On Twitter" href="https://twitter.com/intent/tweet?text=YourName&url=yourlink">
+<i class="fa fa-twitter fa-lg tw"></i>
+</a>
+<a class="btn btn-default btn-sm" target="_blank" title="On LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=yourlink">
+<i class="fa fa-linkedin fa-lg linkin"></i>
+</a>
+<a class="btn btn-default btn-sm" target="_blank" title="On VK.com" href="https://vk.com/share.php?url=yourlink">
+<i class="fa fa-vk fa-lg vk"></i>
+</a>
+<a class="btn btn-default btn-sm" target="_blank" title="Pin It" href="https://www.pinterest.com/pin/create/button/?url=yourlink">
+<i class="fa fa-pinterest fa-lg pinterest"></i>
+</a>
+<a class="btn btn-default btn-sm" target="_blank" title="Surf!" href="http://surfingbird.ru/share?url=yourlink">
+<i class="fa surfingbird fa-lg"></i>
+</a>
+</div>
+</div>
+<hr>
+<div class="container">
+<div class="btn-group">
+<button class="btn btn-default btn-xs disabled">Share:</button>
+<a class="btn btn-default btn-xs" target="_blank" title="Like On Facebook" href="https://www.facebook.com/plugins/like.php?href=yourlink">
+<i class="fa fa-thumbs-o-up fa-lg fb"></i>
+</a>
+<a class="btn btn-default btn-xs" target="_blank" title="On Facebook" href="https://www.facebook.com/sharer.php?u=yourlink">
+<i class="fa fa-facebook fa-lg fb"></i>
+</a>
+<a class="btn btn-default btn-xs" target="_blank" title="On Twitter" href="https://twitter.com/intent/tweet?text=YourName&url=yourlink">
+<i class="fa fa-twitter fa-lg tw"></i>
+</a>
+<a class="btn btn-default btn-xs" target="_blank" title="On LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=yourlink">
+<i class="fa fa-linkedin fa-lg linkin"></i>
+</a>
+<a class="btn btn-default btn-xs" target="_blank" title="On VK.com" href="https://vk.com/share.php?url=yourlink">
+<i class="fa fa-vk fa-lg vk"></i>
+</a>
+<a class="btn btn-default btn-xs" target="_blank" title="Pin It" href="https://www.pinterest.com/pin/create/button/?url=yourlink">
+<i class="fa fa-pinterest fa-lg pinterest"></i>
+</a>
+<a class="btn btn-default btn-xs" target="_blank" title="Surf!" href="http://surfingbird.ru/share?url=yourlink">
+<i class="fa surfingbird fa-lg"></i>
+</a>
+</div>
+</div><div id="bcl"><a style="font-size:8pt;text-decoration:none;" href="https://pixeljuggernaut.vercel.app/">PixelJuggernaut</a></div>
+                        
+</body>
+</html>                        

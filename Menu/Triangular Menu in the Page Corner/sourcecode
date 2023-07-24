@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+<style>
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+html {
+  height: 100%;
+}
+body {
+  background: #181818;
+  color: #fff;
+  height: 100%;
+  overflow: hidden; 
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.main-menu {
+  float: left;
+  position: absolute;
+  min-height: 100%;
+  width: 500px;
+  z-index: 1000;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -moz-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: translate(-336px, 0);
+  -moz-transform: translate(-336px, 0);
+  transform: translate(-336px, 0);
+}
+.main-menu.open {
+  -webkit-transform: translate(0, 0) skew(0);
+  -moz-transform: translate(0, 0) skew(0);
+  transform: translate(0, 0) skew(0);
+}
+.main-menu.open .main-menu-form {
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.main-menu.open .main-menu-form:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #2980B9;
+  box-shadow: 0px 0px 6px 1px rgba(93, 173, 226, 0.7);
+}
+.main-menu-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #283747;
+  z-index: 1001;
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -moz-transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skewX(-38deg);
+  -moz-transform: skewX(-38deg);
+  transform: skewX(-38deg);
+}
+.main-menu.open .main-menu-btn {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0s, visibility 0s;
+  -moz-transition: opacity 0s, visibility 0s;
+  transition: opacity 0s, visibility 0s;
+}
+.main-menu-content {
+  position: relative;
+  padding: 35px 55px 35px 25px;
+  font: normal 16px/1.25 'Open Sans';
+}
+.main-menu.open .main-menu-content {
+  z-index: 1002;
+}
+.main-menu-logo h2 {
+  font-size: 28px;
+  opacity: 0;
+}
+.main-menu.open .main-menu-logo h2 {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in .3s;
+  -moz-transition: opacity .5s ease-in .3s;
+  transition: opacity .5s ease-in .3s;
+}
+.main-menu-nav {
+  margin-top: 35px;
+}
+.main-menu.open .main-menu-nav a {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: color .2s ease-in-out 0s, opacity .3s ease, transform .3s ease;
+  -moz-transition: color .2s ease-in-out 0s, opacity .3s ease, transform .3s ease;
+  transition: color .2s ease-in-out 0s, opacity .3s ease, transform .3s ease;
+  opacity: 1;
+}
+.main-menu-nav a {
+  opacity: 0;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #5DADE2;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+.main-menu-nav i {
+  color: #fff;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+.main-menu.open .main-menu-nav a:hover {
+  color: #3498DB;
+  -webkit-transition-delay: 0s !important;
+  -moz-transition-delay: 0s !important;
+  transition-delay: 0s !important;
+}
+.main-menu.open .main-menu-nav a.orange {
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.main-menu.open .main-menu-nav a.yellow {
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  transition-delay: .5s;
+}
+.main-menu.open .main-menu-nav a.green {
+  -webkit-transition-delay: .6s;
+  -moz-transition-delay: .6s;
+  transition-delay: .6s;
+}
+.main-menu.open .main-menu-nav a.purple {
+  -webkit-transition-delay: .7s;
+  -moz-transition-delay: .7s;
+  transition-delay: .7s;
+}
+.main-menu.open .main-menu-nav a.red {
+  -webkit-transition-delay: .8s;
+  -moz-transition-delay: .8s;
+  transition-delay: .8s;
+}
+.main-menu-nav a.orange:hover i {
+  color: #D35400;
+}
+.main-menu-nav a.yellow:hover i {
+  color: #F5AB35;
+}
+.main-menu-nav a.green:hover i {
+  color: #00B16A;
+}
+.main-menu-nav a.purple:hover i {
+  color: #9A12B3;
+}
+.main-menu-nav a.red:hover i {
+  color: #F64747;
+}
+.main-menu-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 38px;
+  right: 39px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #AEB6BF;
+  -webkit-transition: opacity .4s cubic-bezier(0.95, 0.05, 0.795, 0.035), visibility .4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -moz-transition: opacity .4s cubic-bezier(0.95, 0.05, 0.795, 0.035), visibility .4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: opacity .4s cubic-bezier(0.95, 0.05, 0.795, 0.035), visibility .4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-transform: skew(38deg) rotate(38deg);
+  -moz-transform: skew(38deg) rotate(38deg);
+  transform: skew(38deg) rotate(38deg);
+}
+.main-menu-btn i {
+  -webkit-transform: rotate(-38deg);
+  -moz-transform: rotate(-38deg);
+  transform: rotate(-38deg);
+  color: #AEB6BF;
+}
+.main-menu-btn:hover i{
+  color: #3498DB;
+}
+.main-menu.open .main-menu-close {
+  opacity: 1;
+  -webkit-transition: color .2s ease, opacity 1s ease 1s, transform .3s ease 1s;
+  -moz-transition: color .2s ease, opacity 1s ease 1s, transform .3s ease 1s;
+  transition: color .2s ease, opacity 1s ease 1s, transform .3s ease 1s;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main-menu-close {
+  opacity: 0;
+  display: inline-block;
+  margin-top: 65px;
+  margin-left: 15px;
+  font-size: 18px;
+  color: #BDC3C7;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+.main-menu-close:hover {
+  color: #A569BD;
+}
+.main-wrapper {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+  background: #212F3D;
+  font: normal 16px 'Open Sans';
+}
+.main-content {
+  padding: 45px 55px;
+}
+.main-content h4 {
+  font-size: 26px;
+  line-height: 1.25;
+  color: #3498DB;
+  text-align: center;
+}
+.main-content .posts li {
+  margin: 10px 0;
+}
+</style>
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+  <div class="main-menu">
+    <div class="main-menu-form">
+      <div class="main-menu-btn"><i class="fa fa-bars"></i></div>
+    </div>  
+    <div class="main-menu-content">
+      <!-- main logo -->
+      <div class="main-menu-logo">
+        <h2>MENU</h2>
+      </div>
+      <!-- navigation -->
+      <ul class="main-menu-nav">
+        <li><a href="#" class="orange"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
+        <li><a href="#" class="yellow"><i class="fa fa-book fa-fw front"></i>&nbsp; Library</a></li>
+        <li><a href="#" class="green"><i class="fa fa-folder fa-fw"></i>&nbsp; Forum</a></li>
+        <li><a href="#" class="purple"><i class="fa fa-envelope fa-fw"></i>&nbsp; Contact</a></li>
+        <li><a href="#" class="red"><i class="fa fa-users fa-fw"></i>&nbsp; About</a></li>
+      </ul>
+      <a href="#" class="main-menu-close"><i class="fa fa-close"></i>&nbsp; Close menu</a>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <div class="main-content">
+      <h4>Main content</h4>
+      <div class="posts">
+        <ul>
+          <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat accusamus, iusto, maxime adipisci vitae voluptas unde rerum, reiciendis ratione eum harum, natus quia eveniet vel ab dolore veritatis. Est illo officia eos sed, dignissimos, quod exercitationem ipsum mollitia nulla beatae quo praesentium distinctio. Ipsa magnam cupiditate quia ducimus dicta excepturi hic quam vitae incidunt amet vel repellendus pariatur facere inventore saepe minus autem, cumque asperiores eveniet maiores. Sunt libero tenetur officia ipsa natus perferendis, aperiam sed tempora quos, ad culpa. Aliquid aliquam officiis officia labore dignissimos sequi hic omnis optio amet, ad culpa saepe, esse enim, ratione quis rem deserunt.</p></li>
+          <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat accusamus, iusto, maxime adipisci vitae voluptas unde rerum, reiciendis ratione eum harum, natus quia eveniet vel ab dolore veritatis. Est illo officia eos sed, dignissimos, quod exercitationem ipsum mollitia nulla beatae quo praesentium distinctio. Ipsa magnam cupiditate quia ducimus dicta excepturi hic quam vitae incidunt amet vel repellendus pariatur facere inventore saepe minus autem, cumque asperiores eveniet maiores. Sunt libero tenetur officia ipsa natus.</p></li>
+          <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat accusamus, iusto, maxime adipisci vitae voluptas unde rerum, reiciendis ratione eum harum, natus quia eveniet vel ab dolore veritatis. Est illo officia eos sed, dignissimos, quod exercitationem ipsum mollitia nulla beatae quo praesentium distinctio. Ipsa magnam cupiditate quia ducimus dicta excepturi.</p></li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+</div><div id="bcl"><a style="font-size:8pt;text-decoration:none;" href="https://pixeljuggernaut.vercel.app/">PixelJuggernaut</a></div>
+<script>
+var MainMenu = (function() {
+  var MainMenu = function(config) {
+    config = config || {};
+    this.toggleBtn = $(config.toggleBtn);
+    this.menu = $(config.menu);
+    this.close = $(config.close);
+    this.init();
+    config = null;
+  };
+  // public interface
+  MainMenu.prototype = {
+    constructor: MainMenu,
+    init: function() {
+      this.eventManager();
+    },
+    eventManager: function() {
+      this.toggleBtn.on('click.openMenu', onButtonClickHandler.bind(this));
+      this.close.on('click.closeMenu', onCloseClickHandler.bind(this));
+    }
+  };
+  // private interface
+  function onButtonClickHandler(menu, evt) {
+    if (!this.menu.hasClass('open')) {
+      this.menu.addClass('open');
+    };
+  }
+  function onCloseClickHandler(evt) {
+    this.menu.removeClass('open')
+  }
+  function onDocumentClickHandler(evt) {
+    var $target = $(evt.target);
+    if (!$target.closest(this.menuForm).length && !$target.closest(this.menuContent).length && this.menu.hasClass('open')) {
+      this.menu.removeClass('open')
+    }
+  }
+  return MainMenu;
+})();
+$(document).ready(function() {
+  var mainMenu = new MainMenu({
+    menu: '.main-menu',
+    toggleBtn: '.main-menu-btn',
+    close: '.main-menu-close'
+  });
+});
+</script>
+
+</body>
+</html>                        
