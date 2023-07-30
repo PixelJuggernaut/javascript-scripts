@@ -5,9 +5,17 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 # Changelog
 
+## [30.07.2023]
+
+## Added
+
+- New thumbnail - Thumbnail with Various Sizes
+- New category - Toggle Switches 
+- New toggle switch - Colorful Toggle Switch Code
+
 ## [24.07.2023]
 
-- Big update! All files are now in 1 file named sourcecode!
+## Added
 
 - New category - Thumbnail
 - New thumbnail - Thumbnail Split on Hover        
@@ -20,7 +28,13 @@ This repository will be updated with new scripts every day(or few days), so leav
 - New social button - Social Sharing Buttons with Various Sizes
 - New social button - Animating Social Buttons
 
+## Changed
+
+- All files are now in 1 file named sourcecode
+
 ## [17.07.2023]
+
+## Added
 
 - New 404 page - 404 Page with Animating Robot
 - New category - Accordions
@@ -28,19 +42,30 @@ This repository will be updated with new scripts every day(or few days), so leav
 
 ## [13.07.2023]
 
+## Added
+
 - New Timelines - Event Reporter Timeline and Responsive Sliding Timeline
+
+## Changed
+
 - Changed credits from Psycho006Develop(my old username) to PixelJuggernaut
 
 ## [08.07.2023]
 
+## Added
+
 - New web form - CSS Glowing Buttons with Animating Borders and Shadow
 
 ## [06.07.2023] 
+
+## Added
 
 - New pricing plans - HTML Dark Pricing and Pricing Table with features filling bars
 - New progress bars - Gradient downloading progress bar and HTML Battery Charging Progress Bar
 - New 404 page - 404 Page in Space with Astronaut
 
 ## [05.07.2023] 
+
+## Changed
 
 - Captcha Generator and Cookies Consent Box moved to this repository.

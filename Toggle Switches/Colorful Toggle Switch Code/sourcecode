@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #FB0712, #124FEB)
+}
+#tg_button {
+    height: 50px;
+    width: 140px;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1)
+}
+#tg_button .indicator {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    border-radius: 49% 51% 0% 100% / 60% 49% 79% 59%;
+    background-image: linear-gradient(to right top, #FB0712, #124FEB);
+    top: 3px;
+    left: 4px;
+    transition: all 0.5s
+}
+#tg_button .active {
+    left: 92px;
+    border-radius: 49% 51% 100% 0% / 60% 49% 51% 70%
+}
+</style>
+
+</head>
+<body>
+<div id="tg_button">
+  <div class="indicator"> </div>
+</div><div id="bcl"><a style="font-size:8pt;text-decoration:none;" href="https://pixeljuggernaut.vercel.app/">PixelJuggernaut</a></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+  const tg_button = document.getElementById('tg_button');
+  const indicator = document.querySelector(".indicator");
+  tg_button.onclick = function(){
+  indicator.classList.toggle('active');
+}
+});
+</script>
+</body>
+</html>       
+                        
